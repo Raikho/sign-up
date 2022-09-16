@@ -58,3 +58,11 @@ img {
     z-index: 1;
 }
 .bot {background-color: var(--bg-gray);}
+
+.description {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    margin-right: 30%;
+    margin-top: 20%;
+}
