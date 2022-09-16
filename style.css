@@ -13,15 +13,35 @@ body {
     background-image: url(landscape.jpg);
     background-size: cover;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .attribution {
     color: white;
-    align-self: flex-end;
-    margin-bottom: 5px;
+    text-align: center;
+    padding: auto;
+    height: 3vh;
 }
-a {color: white;}
+a {color: inherit;}
+
+.logo-container {
+    background-color: #0001;
+    height: 15vh;
+    margin-top: 15vh;
+    margin-bottom: 67vh;
+    display: flex;
+    justify-content: center;
+}
+img {
+    max-height: 100%;
+}
+@font-face {font-family: Norse;src: url(Norse-Bold.otf);}
+.logo-text {
+    display: inline;
+    color: white;
+    font-family: Norse;
+    font-size: 15vh;
+}
 
 .right {
     flex: 2;
