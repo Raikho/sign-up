@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.left {
+    flex: 1;
+    background-image: url(landscape.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.attribution {
+    color: white;
+    align-self: flex-end;
+    margin-bottom: 5px;
+}
+
+.right {
+    flex: 2;
+    background-color: lightcoral;
+}
