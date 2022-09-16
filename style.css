@@ -1,3 +1,7 @@
+:root {
+    --bg-gray: #e5e7eb;
+}
+
 body {
     display: flex;
     height: 100vh;
@@ -17,8 +21,20 @@ body {
     align-self: flex-end;
     margin-bottom: 5px;
 }
+a {color: white;}
 
 .right {
     flex: 2;
-    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
 }
+.right>div {flex: 1;}
+
+.top {background-color: var(--bg-gray);}
+.mid {
+    background-color: white;
+    box-shadow: 5px 5px 5px 0px #0002,
+        5px -2px 5px 0px #0001;;
+    z-index: 1;
+}
+.bot {background-color: var(--bg-gray);}
