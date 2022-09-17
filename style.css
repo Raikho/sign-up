@@ -124,6 +124,10 @@ form {
     flex-direction: column;
     justify-content: space-evenly;
 }
+label {
+    font-size: 12px;
+    display: block;
+}
 input {
     height: 20px;
     width: 25ch;
@@ -131,6 +135,8 @@ input {
     border-radius: 3px;
     /* box-shadow: 1px 1px 1px #0002; */
 }
-input::placeholder {
-    color: #0004;
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 2px 2px 2px #0002;
 }
