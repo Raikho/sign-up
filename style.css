@@ -1,5 +1,6 @@
 :root {
     --bg-gray: #e5e7eb;
+    --border: #e5e7eb;
 }
 
 body {
@@ -51,7 +52,12 @@ img {
 }
 .right>div {flex: 1;}
 
-.top {background-color: var(--bg-gray);}
+.top {
+    background-color: var(--bg-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .mid {
     background-color: white;
     box-shadow: 5px 5px 5px 0px #0002,
@@ -67,7 +73,6 @@ img {
 .description {
     font-size: 16px;
     margin-right: 30%;
-    margin-top: 20%;
 }
 
 .logins {
@@ -131,7 +136,7 @@ label {
 input {
     height: 20px;
     width: 25ch;
-    border: 1px solid #0002;
+    border: 1px solid var(--border);
     border-radius: 3px;
     /* box-shadow: 1px 1px 1px #0002; */
 }
@@ -139,4 +144,8 @@ input:focus {
     outline: none;
     border: 1px solid blue;
     box-shadow: 2px 2px 2px #0002;
+}
+
+.error:valid {
+    border-color: indianred;
 }
