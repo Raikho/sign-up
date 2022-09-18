@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+	<script src="javascript.js" defer></script>
     <title>Sign-up Form</title>
 </head>
 <body>
@@ -40,7 +41,8 @@
                             </div>
                             <div class="row">
                                 <label for="password">Password</label>
-                                <input type="password" class="error" name="password" id="password">
+                                <input type="password" class="error" name="password" id="password" pattern="[\w]+" minlength="5" required>
+								<div class="error-text" hidden>* Passwords do not match</div>
                             </div>
                         </div>
                         <div class="column">
@@ -54,7 +56,7 @@
                             </div>
                             <div class="row">
                                 <label for="confirm_password">Confirm Password</label>
-                                <input type="password" class="error" name="confirm_password" id="confirm_password">
+                                <input type="password" class="error" name="confirm_password" id="confirm_password"  pattern="[\w]+" minlength="5" required>
                             </div>
                         </div>
                     </form>

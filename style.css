@@ -147,5 +147,14 @@ input:focus {
 }
 
 .error:valid {
+    border-color: green;
+}
+.error:invalid {
     border-color: indianred;
+}
+
+.error-text {
+    font-size: 10px;
+    color: indianred;
+    position: absolute;
 }
